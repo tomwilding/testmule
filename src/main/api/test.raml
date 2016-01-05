@@ -1,0 +1,14 @@
+#%RAML 0.8
+baseUri: http://mocksvc.mulesoft.com/mocks/bb9cb39c-b4a7-487c-bed8-868d27ff5529
+title: oauthTest
+version: 1
+
+/consume:
+  get:
+    description: test oath connection
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {"response" : "connected"}
